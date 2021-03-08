@@ -22,6 +22,9 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
     <style amp-custom>
     /* Add your styles here */
   :root{
@@ -156,10 +159,10 @@ width: 229px;
 </div>
 </section>
 </amp-accordion>
-<iframe src="https://iv-void.vercel.app" width="359" height="785"
+<amp-iframe src="https://iv-void.vercel.app" width="359" height="785"
     frameborder=0
     sandbox="allow-scripts allow-same-origin"
-  ></iframe>
+></amp-iframe>
 
 <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
