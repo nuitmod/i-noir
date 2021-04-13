@@ -21,83 +21,84 @@
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-    <style amp-custom>
+  <style amp-custom>
     /* Add your styles here */
-  :root{
-    --bg-main: purple;
-    --bg-menu: black;
-  }
-  *{
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    -webkit-text-size-adjust: 100%;
+    :root{
+      --bg-main: purple;
+      --bg-menu: black;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      -webkit-text-size-adjust: 100%;
+      background: var(--bg-menu);
+      font-size: 11px;
+      color: var(--bg-main);
+    }
+    amp-accordion {
+      background: var(--bg-menu);
+
+    }
+    amp-accordion a{
+      background: var(--bg-menu);
+      color: var(--bg-main);
+      text-decoration: none;
+      padding: 0 5px;
+    }
+    amp-accordion .amp_a{
     background: var(--bg-menu);
-    font-size: 11px;
-    color: var(--bg-main);
-  }
-  amp-accordion {
-    background: var(--bg-menu);
-  }
-  amp-accordion a{
-    background: var(--bg-menu);
-    color: var(--bg-main);
-    text-decoration: none;
-    padding: 0 5px;
-  }
-  amp-accordion .amp_a{
-  background: var(--bg-menu);
-  width: auto;
-}
-amp-youtube{
-  margin: 1px 2px;
-}
-audio{
-    height: 10px;
-    width: 219px;
-    color: var(--bg-menu);
-    background: var(--bg-menu);
-    background-color: var(--bg-menu);
-    z-index: 12;
-  }
-#my_audio{
-width: 239px;
-}
-</style>
+    width: auto;
+    }
+    amp-youtube{
+      margin: 1px 2px;
+    }
+    audio{
+        height: 10px;
+        width: 219px;
+        color: var(--bg-menu);
+        background: var(--bg-menu);
+        background-color: var(--bg-menu);
+        z-index: 12;
+      }
+    #my_audio{
+    width: 239px;
+    }
+  </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://i-noir.vercel.app/index.html">
     <title>i-nuit</title>
     <link rel="manifest" href="./manifest.json">
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Webpage",
-      "url": "https://www.example.com",
-      "name": "i-nuit amp",
-      "headline": "webpage title",
-      "description": "Here is the description",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.example.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "The Publisher",
-        "logo": {
-          "url": "https://www.example.com/logo-blue.svg",
-          "width": 175,
-          "height": 60,
-          "@type": "ImageObject"
+      {
+        "@context": "http://schema.org",
+        "@type": "Webpage",
+        "url": "https://www.example.com",
+        "name": "i-nuit amp",
+        "headline": "webpage title",
+        "description": "Here is the description",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.example.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Publisher",
+          "logo": {
+            "url": "https://www.example.com/logo-blue.svg",
+            "width": 175,
+            "height": 60,
+            "@type": "ImageObject"
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/leader.png",
+          "width": 1200,
+          "height": 630
         }
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://www.example.com/leader.png",
-        "width": 1200,
-        "height": 630
       }
-    }
     </script>
   </head>
 <body>
@@ -113,31 +114,37 @@ width: 239px;
     </div>
   </section>
 </amp-accordion>
+
 <h4>i-nuit</h4>
 <amp-accordion id="my_audio" disable-session-states>
-<section>
-  <h5 class="amp_a">Radio</h5>
-  <div>
-  <h6>dubstep beyond</h6>
-  <amp-audio preload="none" controls>
-   <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
-  </amp-audio>
-  <h6>n5md</h6>
-  <amp-audio preload="none" controls>
-   <source src="https://ice6.somafm.com/n5md-128-mp3" type="audio/mpeg">
-  </amp-audio>
-  <h6>lush</h6>
-  <amp-audio preload="none" controls>
-   <source src="https://ice1.somafm.com/lush-128-mp3" type="audio/mpeg">
-  </amp-audio>
-</div>
-</section>
+  <section>
+    <h5 class="amp_a">Radio</h5>
+    <div>
+    <h6>dubstep beyond</h6>
+    <amp-audio preload="none" controls>
+     <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
+    </amp-audio>
+    <h6>n5md</h6>
+    <amp-audio preload="none" controls>
+     <source src="https://ice6.somafm.com/n5md-128-mp3" type="audio/mpeg">
+    </amp-audio>
+    <h6>lush</h6>
+    <amp-audio preload="none" controls>
+     <source src="https://ice1.somafm.com/lush-128-mp3" type="audio/mpeg">
+    </amp-audio>
+    <h6>china traditional</h6>
+    <amp-audio preload="none" controls>
+     <source src="https://radio.chinesemusicworld.com/chinesemusic.ogg?_=1" type="audio/mpeg">
+    </amp-audio>
+    </div>
+  </section>
 </amp-accordion>
 <br>
 <amp-img height="59" width="99" src="img/dark.jpeg"></amp-img>
-<amp-img height="59" width="59" src="img/mini_dress.jpeg" style="opacity: 0.9"></amp-img>
+<!-- <amp-img height="59" width="59" src="img/mini_dress.jpeg" style="opacity: 0.9"></amp-img> -->
+<amp-img height="59" width="99" src="img/dark_mod.JPG"></amp-img>
 <br>
-<amp-state id="my_vid">
+<!-- <amp-state id="my_vid">
   <script type="application/json">
     {
       "items":[
@@ -164,7 +171,7 @@ width: 239px;
       ]
     }
   </script>
-</amp-state>
+</amp-state> -->
 <amp-state id="brands">
   <script type="application/json">
     {
@@ -178,13 +185,14 @@ width: 239px;
       {
         "brand_name": "Yoeyyoy",
         "country": "China",
-        "img_url": "./img/yoeyyou.jpg",
+        "img_url": "./img/yu2.jpg",
         "vid_id": "SW1f9r55Ux4"
       }
     ]
     }
   </script>
 </amp-state>
+
 <h4>Brands</h4>
 <amp-list width="auto"
   height="900"
@@ -211,7 +219,7 @@ width: 239px;
          </section>
        </amp-accordion>
     </div>
-</template>
+  </template>
 </amp-list>
 
 <!--
