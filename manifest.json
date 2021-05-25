@@ -1,18 +1,18 @@
 {
-  "name": "i-noir-netlify",
-  "short_name": "i-noir",
+  "name": "i-nuit-netlify",
+  "short_name": "i-nuit",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#000",
   "description": "A amp pwa app.",
   "icons": [
       {
-          "src": "../assets/logo-192.png",
+          "src": "./assets/logo-192.png",
           "sizes": "192x192",
           "type": "image/png"
       },
       {
-          "src": "../assets/logo-512.png",
+          "src": "./assets/logo-512.png",
           "sizes": "512x512",
           "type": "image/png"
       }
