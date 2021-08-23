@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="google-site-verification" content="lu0ezzTuvs3DZa0Zx7k3T0_Izfrwd7ovQT2jz88VbkQ" />
-    <meta name="description" content="This is the AMP Boilerplate.">
+    <meta name="description" content="iiww-mod-media-pr">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-experiment-0.1.js">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js">
@@ -28,7 +28,7 @@
   <style amp-custom>
     /* Add your styles here */
     :root{
-      --bg-main: rgb(162, 106, 155);
+      --bg-main: rgb(171, 146, 167);
       --bg-menu: black;
     }
     *{
@@ -59,12 +59,12 @@
       margin: 1px 2px;
     }
     audio{
-        height: 10px;
-        width: 219px;
-        color: var(--bg-menu);
-        background: var(--bg-menu);
-        background-color: var(--bg-menu);
-        z-index: 12;
+      height: 10px;
+      width: 219px;
+      color: var(--bg-menu);
+      background: var(--bg-menu);
+      background-color: var(--bg-menu);
+      z-index: 12;
     }
     amp-img{
       margin: 5px;
@@ -78,7 +78,7 @@
     }
   </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <link rel="canonical" href="https://i-nuit.vercel.app/index.html/">
+    <link rel="canonical" href="https://i-nuit.vercel.app/index.html">
     <title>i-nuit</title>
     <link rel="manifest" href="./manifest.json">
     <script type="application/ld+json">
@@ -113,7 +113,7 @@
     </script>
   </head>
 <body>
-<amp-accordion class="menu" disable-session-states>
+<amp-accordion class="main" disable-session-states>
   <section>
     <h6 class="amp_a">menu</h6>
     <div>
@@ -128,35 +128,10 @@
 
 <amp-img height="59" width="52" src="./img/IMG_1652.JPG" style="opacity: 0.9"></amp-img>
 <amp-img height="59" width="99" src="./img/dark.jpeg"></amp-img>
-<!--<amp-img height="59" width="52" src="img/DFE7BEDB-B441-477E-93D9-F4C74D037551.jpeg" style="opacity: 0.9"></amp-img>
-<amp-accordion id="my_audio" disable-session-states>
-  <section>
-    <h6 class="amp_a">Radio</h6>
-    <div>
-    <p>dubstep beyond</p>
-    <amp-audio preload="none" controls>
-     <source src="https://ice3.somafm.com/dubstep-128-mp3" type="audio/mpeg">
-    </amp-audio>
-    <p>n5md</p>
-    <amp-audio preload="none" controls>
-     <source src="https://ice6.somafm.com/n5md-128-mp3" type="audio/mpeg">
-    </amp-audio>
-    <p>lush</p>
-    <amp-audio preload="none" controls>
-     <source src="https://ice1.somafm.com/lush-128-mp3" type="audio/mpeg">
-    </amp-audio>
-    <h6>china traditional</h6>
-    <amp-audio preload="none" controls>
-     <source src="https://radio.chinesemusicworld.com/chinesemusic.ogg?_=1" type="audio/mpeg">
-    </amp-audio>
-    </div>
-  </section>
-</amp-accordion>
-<br>
-<amp-img height="59" width="99" src="img/dark.jpeg"></amp-img>
-<amp-img height="59" width="59" src="img/DFE7BEDB-B441-477E-93D9-F4C74D037551.jpeg" style="opacity: 0.9"></amp-img>
-<amp-img height="59" width="99" src="img/dark_mod.JPG"></amp-img>-->
-
+<div>
+<!-- <amp-img height="59" width="59" src="img/DFE7BEDB-B441-477E-93D9-F4C74D037551.jpeg" style="opacity: 0.9"></amp-img> -->
+<!-- <amp-img height="59" width="99" src="img/dark_mod.JPG"></amp-img> -->
+</div>
 <!-- <amp-state id="my_vid">
   <script type="application/json">
     {
@@ -205,42 +180,40 @@
     }
   </script>
 </amp-state>
-<amp-accordion class="menu" disable-session-states>
+<amp-accordion class="main" disable-session-states>
   <section>
-    <h6 class="amp_a">{{brand_name}}</h6>
-    
-<div id="brands-cont">
-<h5>Brands</h5>
-<amp-list width="auto"
-  height="900"
-  layout="fixed-height"
-  src="amp-state:brands">
-  <template type="amp-mustache">
-    <div>
-      <amp-accordion class="menu" disable-session-states>
-        <section>
-          <h6 class="amp_a">{{brand_name}}</h6>
-          <div>
-            <div>
-              Brand: {{brand_name}}
-              Country: {{country}}
-            </div>
-            <p>Foto</p>
-            <div><amp-img src={{img_url}} width="102" height="70"></amp-img></div>
-            <p>Video</p>
-            <amp-youtube
-              data-videoid={{vid_id}}
-              width="150" height="69">
-            </amp-youtube>
-          </div>
-         </section>
-       </amp-accordion>
-    </div>
-  </template>
-</amp-list>
-</div>
-
-</section>
+  <h6 class="amp_a">{{brand_name}}</h6>
+  <div id="brands-cont">
+    <h5>Brands</h5>
+    <amp-list width="auto"
+      height="900"
+      layout="fixed-height"
+      src="amp-state:brands">
+      <template type="amp-mustache">
+        <div>
+          <amp-accordion class="main" disable-session-states>
+            <section>
+              <h6 class="amp_a">{{brand_name}}</h6>
+              <div>
+                <div>
+                  Brand: {{brand_name}}
+                  Country: {{country}}
+                </div>
+                <p>Foto</p>
+                <div><amp-img src={{img_url}} width="102" height="70"></amp-img></div>
+                <p>Video</p>
+                <amp-youtube
+                  data-videoid={{vid_id}}
+                  width="150" height="69">
+                </amp-youtube>
+              </div>
+            </section>
+          </amp-accordion>
+        </div>
+      </template>
+    </amp-list>
+  </div>
+  </section>
 </amp-accordion>
 <!--
 <amp-iframe src="https://iv-void.vercel.app" width="359" height="785"

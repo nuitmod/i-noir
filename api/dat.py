@@ -6,3 +6,5 @@ def ii():
 
 
 #uu="info"
+
+ii()
