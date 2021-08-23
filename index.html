@@ -28,7 +28,7 @@
   <style amp-custom>
     /* Add your styles here */
     :root{
-      --bg-main: purple;
+      --bg-main: rgb(162, 106, 155);
       --bg-menu: black;
     }
     *{
@@ -43,7 +43,7 @@
     }
     amp-accordion {
       background: var(--bg-menu);
-
+      margin-bottom: 2px;
     }
     amp-accordion a{
       background: var(--bg-menu);
@@ -65,12 +65,16 @@
         background: var(--bg-menu);
         background-color: var(--bg-menu);
         z-index: 12;
-      }
+    }
+    amp-img{
+      margin: 5px;
+    }
     #my_audio{
-    width: 229px;
+      width: 229px;
     }
     #brands-cont{
       margin: 1px;
+      width: 50%;
     }
   </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -122,8 +126,8 @@
   </section>
 </amp-accordion>
 
-<amp-img height="59" width="52" src="img/IMG_1652.JPG" style="opacity: 0.9"></amp-img>
-<amp-img height="59" width="99" src="img/dark.jpeg"></amp-img>
+<amp-img height="59" width="52" src="./img/IMG_1652.JPG" style="opacity: 0.9"></amp-img>
+<amp-img height="59" width="99" src="./img/dark.jpeg"></amp-img>
 <!--<amp-img height="59" width="52" src="img/DFE7BEDB-B441-477E-93D9-F4C74D037551.jpeg" style="opacity: 0.9"></amp-img>
 <amp-accordion id="my_audio" disable-session-states>
   <section>
@@ -201,6 +205,10 @@
     }
   </script>
 </amp-state>
+<amp-accordion class="menu" disable-session-states>
+  <section>
+    <h6 class="amp_a">{{brand_name}}</h6>
+    
 <div id="brands-cont">
 <h5>Brands</h5>
 <amp-list width="auto"
@@ -231,16 +239,19 @@
   </template>
 </amp-list>
 </div>
+
+</section>
+</amp-accordion>
 <!--
 <amp-iframe src="https://iv-void.vercel.app" width="359" height="785"
     frameborder=0
     sandbox="allow-scripts allow-same-origin"
 ></amp-iframe>-->
-
+<!-- 
 <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
                            layout="nodisplay">
-</amp-install-serviceworker>
+</amp-install-serviceworker> -->
     <!-- <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
     {
