@@ -21,6 +21,7 @@
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
@@ -68,6 +69,10 @@
     }
     amp-img{
       margin: 5px;
+    }
+    amp-carousel{
+      height: 89px;
+      background: var(--bg-menu);
     }
     #my_audio{
       width: 229px;
@@ -127,39 +132,26 @@
 </amp-accordion>
 
 <amp-img height="59" width="52" src="./img/IMG_1652.JPG" style="opacity: 0.9"></amp-img>
-<amp-img height="59" width="99" src="./img/dark.jpeg"></amp-img>
+<!-- <amp-img height="59" width="99" src="./img/dark.jpeg"></amp-img> -->
 <div>
 <!-- <amp-img height="59" width="59" src="img/DFE7BEDB-B441-477E-93D9-F4C74D037551.jpeg" style="opacity: 0.9"></amp-img> -->
-<amp-img height="59" width="99" src="img/dark_mod.JPG"></amp-img>
+<!-- <amp-img height="59" width="99" src="./img/dark_mod.JPG"></amp-img> -->
 </div>
-<!-- <amp-state id="my_vid">
-  <script type="application/json">
-    {
-      "items":[
-      {
-        "id": 0,
-        "vid_id": "IIU2USQ6TBo"
-      },
-      {
-        "id": 1,
-        "vid_id": "Zqz_KQPK6ds"
-      },
-      {
-        "id": 2,
-        "vid_id": "SW1f9r55Ux4"
-      },
-      {
-        "id": 3,
-        "vid_id": "JNaYn5mdph8"
-      },
-      {
-        "id": 4,
-        "vid_id": "TPGO6T1h528"
-      }
-      ]
-    }
-  </script>
-</amp-state> -->
+<amp-carousel
+  width="350"
+  height="300"
+  layout="responsive"
+  type="slides"
+  role="region"
+  aria-label="Basic carousel"
+  autoplay
+  delay="3000"
+  >
+  <amp-img src="./img/dark.jpeg" width="200" height="80"></amp-img>
+  <amp-img src="./img/dark_mod.JPG" width="200" height="80"></amp-img>
+  <amp-img src="./img/itib.jpeg" width="200" height="80"></amp-img>
+  <amp-img src="./img/pin_rnv.GIF" width="200" height="80"></amp-img>
+  </amp-carousel>
 <amp-state id="brands">
   <script type="application/json">
     {
