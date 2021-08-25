@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="google-site-verification" content="lu0ezzTuvs3DZa0Zx7k3T0_Izfrwd7ovQT2jz88VbkQ" />
-    <meta name="description" content="iiww-mod-media-pr">
+    <meta name="description" content="vii-mod">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-experiment-0.1.js">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js">
@@ -79,19 +79,25 @@
     }
     #brands-cont{
       margin: 10px 2px;
+      width: 70%;
+    }
+    .inn{
       width: 50%;
+    }
+    h2{
+      text-align: center;
     }
   </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://vii-mod.vercel.app/index.html">
-    <title>i-nuit</title>
+    <title>vii-mod</title>
     <link rel="manifest" href="./manifest.json">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "Webpage",
         "url": "https://www.example.com",
-        "name": "i-nuit amp",
+        "name": "vii-mod amp",
         "headline": "webpage title",
         "description": "Here is the description",
         "mainEntityOfPage": {
@@ -130,13 +136,12 @@
     </div>
   </section>
 </amp-accordion>
-
+<h2>vii-mod media</h2>
 <amp-img height="59" width="52" src="./img/IMG_1724.JPG" style="opacity: 0.9"></amp-img>
 <!-- <amp-img height="59" width="99" src="./img/dark.jpeg"></amp-img> -->
-<div>
-<!-- <amp-img height="59" width="59" src="img/DFE7BEDB-B441-477E-93D9-F4C74D037551.jpeg" style="opacity: 0.9"></amp-img> -->
-<!-- <amp-img height="59" width="99" src="./img/dark_mod.JPG"></amp-img> -->
-</div>
+<p>
+  
+</p>
 <amp-carousel
   width="350"
   height="300"
@@ -194,11 +199,17 @@
                 </div>
                 <p>Foto</p>
                 <div><amp-img src={{img_url}} width="102" height="70"></amp-img></div>
-                <p>Video</p>
-                <amp-youtube
-                  data-videoid={{vid_id}}
-                  width="150" height="69">
-                </amp-youtube>
+                <amp-accordion class="main inn" disable-session-states>
+                  <section>
+                    <h6 class="amp_a">Video</h6>
+                    <div>
+                    <amp-youtube
+                      data-videoid={{vid_id}}
+                      width="150" height="69">
+                    </amp-youtube>
+                    </div>
+                  </section>
+                </amp-accordion>
               </div>
             </section>
           </amp-accordion>
