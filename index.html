@@ -22,9 +22,7 @@
     <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
     <!-- <script data-ad-client="ca-pub-5578293993087051" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
   <style amp-custom>
     /* Add your styles here */
@@ -86,6 +84,7 @@
     }
     h2{
       text-align: center;
+      margin: 10px;
     }
   </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -138,26 +137,10 @@
 </amp-accordion>
 <h2>vii-mod media</h2>
 <amp-img height="59" width="52" src="./img/IMG_1724.JPG" style="opacity: 0.9"></amp-img>
-<!-- <amp-img height="59" width="99" src="./img/dark.jpeg"></amp-img> -->
-<p>
-  
-</p>
-<amp-carousel
-  width="350"
-  height="300"
-  layout="responsive"
-  type="slides"
-  role="region"
-  aria-label="Basic carousel"
-  autoplay
-  delay="3000"
-  >
-  <amp-img src="./img/dark.jpeg" width="200" height="80"></amp-img>
-  <amp-img src="./img/dark_mod.JPG" width="200" height="80"></amp-img>
-  </amp-carousel>
-
+<!-- <amp-img height="59" width="52" src="./img/IMG_1230.JPG"></amp-img> -->
+<div>
 <amp-img height="59" width="52" src="./img/IMG_1728.JPG" style="opacity: 0.9"></amp-img>
-
+</div>
 <amp-state id="brands">
   <script type="application/json">
     {
@@ -181,6 +164,20 @@
 <amp-accordion class="main" disable-session-states>
   <section>
   <h6 class="amp_a">{{brand_name}}</h6>
+  <div>
+    <amp-carousel
+    width="350"
+    height="300"
+    layout="responsive"
+    type="slides"
+    role="region"
+    aria-label="Basic carousel"
+    autoplay
+    delay="3000"
+    >
+    <amp-img src="./img/dark.jpeg" width="200" height="80"></amp-img>
+    <amp-img src="./img/dark_mod.JPG" width="200" height="80"></amp-img>
+    </amp-carousel>
   <div id="brands-cont">
     <h5>Brands</h5>
     <amp-list width="auto"
@@ -216,6 +213,7 @@
         </div>
       </template>
     </amp-list>
+  </div>
   </div>
   </section>
 </amp-accordion>
