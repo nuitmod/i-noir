@@ -24,7 +24,7 @@
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
     <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
     <!-- <script data-ad-client="ca-pub-5578293993087051" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-    <script async custom-element="amp-inline-gallery" src="https://cdn.ampproject.org/v0/amp-inline-gallery-0.1.js"></script>
+    <!-- <script async custom-element="amp-inline-gallery" src="https://cdn.ampproject.org/v0/amp-inline-gallery-0.1.js"></script> -->
   <style amp-custom>
     /* Add your styles here */
     :root{
@@ -68,7 +68,6 @@
     }
     amp-img{
       margin: 5px;
-      opacity: 0.8;
     }
     amp-carousel{
       height: 59px;
@@ -77,9 +76,12 @@
     #my_audio{
       width: 229px;
     }
+    #main_cont{
+      margin: 70px 0;
+    }
     #brands-cont{
-      margin: 29px 8px;
-      width: 90%;
+      margin: 19px 2px;
+      width: 92%;
     }
     .inn{
       width: 50%;
@@ -87,6 +89,9 @@
     h3{
       margin: 2px;
       text-align: center;
+    }
+    #brand-info{
+      padding: 10px 2px;
     }
   </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -144,7 +149,8 @@
 </amp-accordion> -->
 <!-- <amp-img height="59" width="52" src="./img/IMG_1724.JPG" style="opacity: 0.7"></amp-img> -->
 <!--<amp-img height="59" width="52" src="./img/IMG_1230.JPG"></amp-img> -->
-<amp-img height="59" width="52" src="./img/IMG_1728.JPG" style="opacity: 0.5"></amp-img>
+<!-- <amp-img height="59" width="52" src="./img/IMG_1728.JPG" style="opacity: 0.2"></amp-img> -->
+<div id="main_cont"></div>
 <amp-state id="brands">
   <script type="application/json">
     {
@@ -197,12 +203,12 @@
             <section>
               <h6 class="amp_a">{{brand_name}}</h6>
               <div>
-                <div>
+                <div id="brand-info">
                   Brand: {{brand_name}}
                   Country: {{country}}
                 </div>
                 <p>Foto</p>
-                <div><amp-img src={{img_url}} width="102" height="70" style="opacity: 0.7"></amp-img></div>
+                <div><amp-img src={{img_url}} width="102" height="70" style="opacity: 0.6"></amp-img></div>
                 <amp-accordion class="main inn" disable-session-states>
                   <section>
                     <h6 class="amp_a">Video</h6>
@@ -224,6 +230,7 @@
   </div>
   </section>
 </amp-accordion>
+</div>
 </div>
 <!--
 <amp-iframe src="https://iv-void.vercel.app" width="359" height="785"
