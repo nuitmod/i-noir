@@ -24,6 +24,7 @@
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
     <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
     <!-- <script data-ad-client="ca-pub-5578293993087051" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <script async custom-element="amp-inline-gallery" src="https://cdn.ampproject.org/v0/amp-inline-gallery-0.1.js"></script>
   <style amp-custom>
     /* Add your styles here */
     :root{
@@ -67,6 +68,7 @@
     }
     amp-img{
       margin: 5px;
+      opacity: 0.8;
     }
     amp-carousel{
       height: 59px;
@@ -76,8 +78,8 @@
       width: 229px;
     }
     #brands-cont{
-      margin: 22px 2px;
-      width: 70%;
+      margin: 29px 8px;
+      width: 90%;
     }
     .inn{
       width: 50%;
@@ -200,7 +202,7 @@
                   Country: {{country}}
                 </div>
                 <p>Foto</p>
-                <div><amp-img src={{img_url}} width="102" height="70" style="opacity: 0.8"></amp-img></div>
+                <div><amp-img src={{img_url}} width="102" height="70" style="opacity: 0.7"></amp-img></div>
                 <amp-accordion class="main inn" disable-session-states>
                   <section>
                     <h6 class="amp_a">Video</h6>
@@ -227,7 +229,7 @@
 <amp-iframe src="https://iv-void.vercel.app" width="359" height="785"
     frameborder=0
     sandbox="allow-scripts allow-same-origin"
-></amp-iframe>-->
+></amp-iframe>
 <!-- 
 <amp-install-serviceworker src="../sw.js"
                            data-iframe-src="install-sw.html"
