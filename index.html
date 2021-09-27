@@ -43,7 +43,7 @@
     }
     amp-accordion {
       background: var(--bg-menu);
-      margin-bottom: 3px;
+      margin-bottom: 5px;
     }
     amp-accordion a{
       background: var(--bg-menu);
@@ -82,9 +82,11 @@
     #brands-cont{
       margin: 19px 2px;
       width: 92%;
+      display: block;
     }
     .inn{
-      width: 50%;
+      width: 59%;
+      padding: 5px;
     }
     h3{
       margin: 2px;
@@ -93,6 +95,12 @@
     #brand-info{
       padding: 10px 2px;
     }
+    amp-accordion .main #inner_data{
+      display: inline;
+    }
+    /* amp-accordion .main #out_data{
+      float: none;
+    } */
   </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://vii-mod.vercel.app/index.html">
@@ -158,13 +166,28 @@
       {
         "brand_name": "Pinhui",
         "country": "China",
-        "img_url": "./img/pin_foto.jpeg",
+        "img_url": "./img/pin_i/pin_foto.jpeg",
+        "info": "",
+        "values": [ "./img/pin_i/pin_dress.jpeg", "./img/pin_i/pin_rnv.GIF", 
+                    "./img/pin_i/IMG_2244.JPG", "./img/pin_i/IMG_2245.JPG",
+                    "./img/pin_i/IMG_2246.JPG", "./img/pin_i/IMG_2247.JPG"],
         "vid_id": "T4WwGJaoeXI"
+      },
+      {
+        "brand_name": "Finelycup",
+        "country": "China",
+        "img_url": "./img/fin_i/IMG_2305.JPG",
+        "info": "",
+        "values": [ "./img/fin_i/IMG_2304.png", "./img/fin_i/IMG_2744.PNG", 
+                    "./img/fin_i/IMG_2745.PNG", "./img/fin_i/IMG_2746.PNG", "./img/fin_i/IMG_2309.JPG"],
+        "vid_id": "4SsdhDPZVEI"
       },
       {
         "brand_name": "Yoeyyoy",
         "country": "China",
-        "img_url": "./img/yu2.jpg",
+        "img_url": "./img/yo_i/yu2.jpg",
+        "info": "",
+        "values": [ "./img/dark_mod.JPG", "./img/yo_i/yu2.jpg"],
         "vid_id": "SW1f9r55Ux4"
       }
     ]
@@ -193,7 +216,9 @@
     </amp-carousel>-->
   <div id="brands-cont">
     <h5>Brands</h5>
-    <amp-list width="auto"
+    <amp-list 
+      load-more="auto"
+      width="auto"
       height="900"
       layout="fixed-height"
       src="amp-state:brands">
@@ -208,7 +233,26 @@
                   Country: {{country}}
                 </div>
                 <p>Foto</p>
-                <div><amp-img src={{img_url}} width="102" height="70" style="opacity: 0.6"></amp-img></div>
+                <div id="inner_data">
+                  <div class="dat"><amp-img src={{img_url}} width="102" height="70" style="opacity: 0.9"></amp-img></div>
+                  <div class="dat">{{info}}</div>
+                </div>
+                <div id="out_data">
+                  <amp-carousel
+                    width="200"
+                    height="150"
+                    layout="responsive"
+                    type="slides"
+                    role="region"
+                    aria-label="Basic carousel"
+                    autoplay
+                    delay="3000"
+                    >
+                    {{#values}}
+                      <amp-img src={{.}} width="200" height="80"></amp-img>
+                    {{/values}}
+                  </amp-carousel>
+                </div>
                 <amp-accordion class="main inn" disable-session-states>
                   <section>
                     <h6 class="amp_a">Video</h6>
